@@ -1,0 +1,71 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body{
+    background-color: aliceblue;
+}
+
+.counter{
+    font-size: 60px;
+    margin: 30px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: black 1px 0 4px;
+}
+
+.theme{
+    font-size: 60px;
+    margin: 20px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+.text{
+    font-size: 45px;
+    margin: 35px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+.container{
+    width: 60%;
+    margin:auto;   
+}
+.picker{
+    margin: 45px;
+}
+
+.ui-draggable, .ui-droppable {
+	background-position: top;
+}
+
+.ui-menu { 
+    width: 1200 px;
+}
+
+#datapicker
+{
+    font-size: 50px;
+}
+
+#menu
+{
+    text-align: center;
+    font-size: 35px;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+}
+
+.owl-carousel{
+    height: 15%;
+}
+#gallery{
+    margin-bottom: 75px;
+}
+
+#galleryTiles{
+    margin-bottom: 50px;
+}

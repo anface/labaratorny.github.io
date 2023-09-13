@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab7</title>
+    
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./jqueryUI.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+      
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/jquery-ui.js"></script>
+    <script src="scripts/owl.carousel.min.js"></script>
+    
+    <script type='text/javascript' src='scripts/unitegallery.min.js'></script> 
+		
+		<link rel='stylesheet' href='./unite-gallery.css' type='text/css' /> 
+		<script type='text/javascript' src='scripts/ug-theme-default.js'></script> 
+		<link rel='stylesheet' href='./ug-theme-default.css' type='text/css' /> 
+        <script type='text/javascript' src='scripts/ug-theme-tiles.js'></script> 
+        
+    <script>
+        $( function() {
+        $( "#accordion" ).accordion();
+        } );
+    </script>
+    <script>
+        $( function() {
+        $( "#datepicker" ).datepicker();
+        } );
+    </script>
+     <script>
+        $( function() {
+        $( "#menu" ).menu();
+        } );
+    </script>
+    <script>
+        $(document).ready(function(){
+        $(".owl-carousel").owlCarousel();
+        });
+    </script>
+    <script type="text/javascript"> 
+			
+			jQuery(document).ready(function(){ 
+				jQuery("#gallery").unitegallery(); 
+			}); 
+		
+    </script>
+    <script>
+
+	jQuery(document).ready(function(){
+
+		jQuery("#galleryTiles").unitegallery({
+
+			gallery_theme: "tiles",
+
+			tiles_type: "nested"
+
+		});
+
+	});
+
+    </script>
+    
+    
+</head>
+
+<body>
+
+   <p class = "counter">Лабораторна робота №7</p>
+   <p class = "theme">Додавання зовнішніх сервісів</p>
+    
+<div class = "container">
+       <p class = "text">Це Accordion</p>
+        <div id="accordion">
+  <h3>Секція 1</h3>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+  <h3>Секція 2</h3>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+  <h3>Секція 3</h3>
+  <div>
+    <p>
+    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+  <h3>Секція 4</h3>
+  <div>
+    <p>
+    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+    mauris vel est.
+    </p>
+    <p>
+    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos himenaeos.
+    </p>
+  </div>
+    </div>
+    
+    <p class = "text">Це Datepicker</p>
+    <div class = "picker">
+    <p>Дата: <input type="text" id="datepicker" size="100px "></p>
+    </div>
+    
+    
+    <p class = "text">Це Menu</p>
+    <ul id="menu">
+  <li class="ui-state-disabled"><div>Іграшки (відсутні)</div></li>
+  <li><div>Книги</div></li>
+  <li><div>Одяг</div></li>
+  <li><div>Електроніка</div>
+    <ul>
+      <li class="ui-state-disabled"><div>Дім</div></li>
+      <li><div>Машина</div></li>
+      <li><div>Інше</div></li>
+    </ul>
+  </li>
+  <li><div>Фільми</div></li>
+  <li><div>Музика</div>
+    <ul>
+      <li><div>Рок</div>
+        <ul>
+          <li><div>Альтернатив</div></li>
+          <li><div>Класична</div></li>
+        </ul>
+      </li>
+      <li><div>Джаз</div>
+        <ul>
+          <li><div>Фріджаз</div></li>
+          <li><div>Біг Бенд</div></li>
+          <li><div>Модерн</div></li>
+        </ul>
+      </li>
+      <li><div>Поп</div></li>
+    </ul>
+  </li>
+    </ul>
+    
+    <p class="text">Це Slider від owlcarousel</p>
+
+    <div class="owl-carousel">
+      <img src="./img/1.jpg" alt="">
+      <img src="./img/2.jpg" alt="">
+      <img src="./img/3.jpg" alt="">
+      <img src="./img/7.jpg" alt="">
+      <img src="./img/5.jpg" alt="">
+      <img src="./img/6.jpg" alt="">
+    </div>
+    
+    <p class="text">Це Default Theme від UniteGallery</p>
+    
+    <div id="gallery" style="display:none;">
+		
+			<img alt="Image 1 Title" src="img/1.jpg"
+				data-image="img/1.jpg"
+				data-description="Тут може бути опис зображення">
+			
+			<img alt="Image 2 Title" src="img/2.jpg"
+				data-image="img/2.jpg"
+				data-description="Тут може бути опис зображення">
+				
+            <img alt="Image 3 Title" src="img/3.jpg"
+				data-image="img/3.jpg"
+				data-description="Тут може бути опис зображення">
+								
+            <img alt="Image 4 Title" src="img/4.jpg"
+				data-image="img/4.jpg"
+				data-description="Тут може бути опис зображення">	
+           
+            <img alt="Image 5 Title" src="img/5.jpg"
+				data-image="img/5.jpg"
+				data-description="Тут може бути опис зображення">
+				
+            <img alt="Image 6 Title" src="img/6.jpg"
+				data-image="img/6.jpg"
+				data-description="Тут може бути опис зображення">	
+		
+    </div>
+    
+    <p class="text">Це Tiles від UniteGallery</p>
+    
+    <div id="galleryTiles" style="display:none;">
+		
+			<img alt="Назва картинки" src="img/1.jpg"
+				data-image="img/1.jpg"
+				data-description="Тут може бути опис зображення">
+			
+			<img alt="Назва картинки" src="img/2.jpg"
+				data-image="img/2.jpg"
+				data-description="Тут може бути опис зображення">
+				
+            <img alt="Назва картинки" src="img/3.jpg"
+				data-image="img/3.jpg"
+				data-description="Тут може бути опис зображення">
+           	
+            <img alt="Назва картинки" src="img/3.jpg"
+				data-image="img/3.jpg"
+				data-description="Тут може бути опис зображення">
+				
+            <img alt="Назва картинки" src="img/4.jpg"
+				data-image="img/4.jpg"
+				data-description="Тут може бути опис зображення">	
+           
+            <img alt="Назва картинки" src="img/5.jpg"
+				data-image="img/5.jpg"
+				data-description="Тут може бути опис зображення">
+				
+            <img alt="Назва картинки" src="img/6.jpg"
+				data-image="img/6.jpg"
+				data-description="Тут може бути опис зображення">	
+           
+            <img alt="Назва картинки" src="img/7.jpg"
+				data-image="img/7.jpg"
+				data-description="Тут може бути опис зображення">
+				
+            <img alt="Назва картинки" src="img/8.jpg"
+				data-image="img/8.jpg"
+				data-description="Тут може бути опис зображення">	
+           
+            <img alt="Назва картинки" src="img/9.jpeg"
+				data-image="img/9.jpeg"
+				data-description="Тут може бути опис зображення">
+				
+            <img alt="Назва картинки" src="img/3.jpg"
+				data-image="img/3.jpg"
+				data-description="Тут може бути опис зображення">
+           	
+            <img alt="Назва картинки" src="img/10.avif"
+				data-image="img/10.avif"
+				data-description="Тут може бути опис зображення">	
+
+    </div>
+    
+    
+</div>       
+
+</body>
+</html>
