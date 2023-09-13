@@ -1,0 +1,76 @@
+.map{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    background-color: grey;
+}
+.map iframe{
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 50px rgba(0,0,0,0.3);
+    width: 100%;
+    height: 50vh;
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video{
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background: grey;
+}
+
+.video iframe{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 50px rgba(0,0,0,0.2);
+    
+}
+
+/* Стилі для контейнера аудіоплеєра */
+.audio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрування горизонтально */
+  justify-content: center; /* Центрування вертикально */
+  margin-top: 20px;
+    
+}
+
+/* Стилі для аудіоплеєра (опціонально) */
+audio {
+  width: 600px; /* Задати ширину аудіоплеєра за бажанням */
+    
+}
+
+
+.fb-page{
+    display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрування горизонтально */
+  justify-content: center; /* Центрування вертикально */
+  margin: 50px;
+  margin-bottom: 100px;
+    
+}
+
+.informer{
+   display: flex;
+  justify-content: center; /* Центрування горизонтально */
+  align-items: center;
+}
