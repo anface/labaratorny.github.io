@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Лінійні алгоритми</title>
+	</head>
+	<body>
+		<script>
+            "use strict";
+            let hPir=parseInt(prompt("Введіть висоту піраміди", ""));
+            let aPir=parseInt(prompt("Введіть сторону основи правильної піраміди", ""));
+            let nPir=parseInt(prompt("Введіть кількість сторін в основі", ""));
+
+            let v = (nPir * aPir * aPir * hPir) / (12 * Math.tan(Math.PI / nPir));
+            alert("Об'єм правильної піраміди =" + v.toFixed(2));
+        </script>
+
+	</body>
+</html>

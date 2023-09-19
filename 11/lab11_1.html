@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Робота з діалоговими вікнами</title>
+	</head>
+	<body>
+		<script> 
+			"use strict";
+			alert("Привіт, це повідомлення виводиться за допомогою JavaScript"); 
+            
+			const answer=confirm("А це питання, продовжимо?");
+			if (answer) {
+				const name=prompt ("Введіть свій nickname", ""); 
+				alert(name + ", вітаю на моєму тестовому сайті!");
+			} 
+			else 
+            {
+				const answer=confirm("Точно не хочете продовжувати?", ""); 
+				if (answer) 
+                {
+                    const name=prompt ("Введіть свій nickname", ""); 
+                    alert(name + ", вітаю на моєму тестовому сайті!");
+			    } 
+            }
+		</script>
+	</body>
+</html>
