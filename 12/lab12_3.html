@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Використання оператора SWITCH</title>
+	</head>	
+	<body>
+		<script> 
+            "use strict";
+            let mark = parseInt(prompt("Введіть кількість балів, яку ви плануєте мати")); 
+            let b = mark % 10;
+            let s; 
+            let u;
+
+            switch (b) { 
+                case 1:
+                    s = "бал"; 
+                    break;
+                default: 
+                    s = "балів";
+            }
+
+            if (mark >= 0 && mark <= 100) {
+                if (mark > 80) {
+                    u = "Впевненість це головне";
+                } else if (mark > 60) {
+                    u = "Успіхів";
+                } else if (mark > 50) {
+                    u = "Трійка це не комісія";
+                } else {
+                    u = "Комісія це не повторка";
+                }
+            } else {
+                u = "Вкажіть, будь ласка, бал від 0 до 100";
+            }
+
+            document.write("<p style = 'font-size: 35px;'>", u);
+            document.write(", ви плануєте мати - ", mark, " ", s);
+        </script>
+
+	</body>
+</html>

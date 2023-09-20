@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Використання оператора IF</title>
+	</head>	
+	<body>
+            <script> 
+                    "use strict";
+
+                    document.write("<p style='font-size: 25px; text-align:center;'>Використання оператора <strong>IF</strong></p>");
+
+                    let quantity = 11; 
+                    if (quantity >= 10) {
+                        document.write("<p style = 'font-size:25px;'>Так тримати, продовжуйте в тому ж дусі!</p>");
+                    }
+                    if (quantity < 10 && quantity > 5) {
+                        document.write("<p style = 'font-size:25px;'>Непогано!</p>");
+                    }
+                    if (quantity < 5) {
+                        document.write("<p style = 'font-size:25px;'>Все попереду!</p>");
+                    }
+
+                    document.write("<p style='font-size: 25px; text-align:center'>Використання оператора <strong>IF</strong> з блоком <strong>ELSE</strong></p>");
+
+                    let oop = "c++";
+                    if (oop == "python") {
+                        document.write("<p style = 'font-size:25px;'>Хороший вибір!</p>"); 
+                    } else {
+                        document.write("<p style = 'font-size:25px;'>Щасти у вивченні ", oop);
+                    }
+
+                    document.write("<p style='font-size: 25px; text-align:center'>Використання оператора <strong>IF</strong> з блоками <strong>ELSE IF</strong></p>");
+
+                    let lang = "eng";
+                    if (lang == "en") {
+                        document.write("<p style = 'font-size:25px;'>Вибрана мова - англійська!</p>");
+                    } else if (lang == "ua") {
+                        document.write("<p style = 'font-size:25px;'>Вибрана мова - українська!</p>");
+                    } else if (lang == "pl") {
+                        document.write("<p style = 'font-size:25px;'>Вибрана мова - польська!</p>");
+                    } else if (lang == "de") {
+                        document.write("<p style = 'font-size:25px;'>Вибрана мова - німецька!</p>");
+                    } else {
+                        document.write("<p style = 'font-size:25px;'>На жаль, мову невизначено!</p>");
+                    }
+            </script>
+
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Використання оператора for in</title>
+	</head>	
+	<body>
+		<script> 
+			"use strict";
+            
+            let student = {
+                Name: "Roman",
+                Surname: "Minchuk",
+                age: 18
+            };
+            
+            for(let key in student){
+                if(student.hasOwnProperty(key)){
+                    document.write(key + ": " + student[key] + "<br>");
+                }
+            }
+		</script>
+	</body>
+</html>

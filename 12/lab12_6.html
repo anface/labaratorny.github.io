@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Використання оператора IF</title>
+    </head>    
+    <body>
+        <script>
+            "use strict";
+            let answer = confirm("Зіграємо?");
+            if (answer) {
+                function question(number) {
+                    let answer1 = confirm("Ваше число - " + number + "?"); // Виправлено спосіб виведення числа
+
+                    if (answer1 == true) {
+                        alert("Я вгадав! Ваше число - " + number);
+                    } else {
+                        let answer2 = confirm("Нажміть 'OK', якщо воно більше, 'Скасувати', якщо менше");
+
+                        if (answer2) {
+                            number = number + Math.floor(number * 0.5); // Зміна розрахунку нового числа
+                        } else {
+                            number = number - Math.floor(number * 0.5); // Зміна розрахунку нового числа
+                        }
+
+                        question(number); // Рекурсивний виклик функції
+                    }
+                }
+
+                while (true) {
+                    alert("Загадайте будь-яке число від 0 до 100");
+                    let number = 50;
+                    question(number);
+                }
+            } else {
+                alert("Шкода.\nМоже бути в інший раз?");
+            }
+        </script>
+    </body>
+</html>

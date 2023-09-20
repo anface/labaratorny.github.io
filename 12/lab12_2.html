@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Використання оператора IF</title>
+	</head>	
+	<body>
+		<script>
+			"use strict";
+			
+			document.write("<p style='text-align:center; font-size: 45px;'>Приклад знаходження більшого числа</p>");
+			let a = 67; let b = 256; let c = 90;
+			
+			if (a < b && a < c) document.write("<p style='font-size: 30px;'>Найменше серед трьох чисел - a=", a);
+				else 
+					if (b < c) document.write("<p style='font-size: 30px;'>Найменше серед трьох чисел - b=", b);
+						else document.write("<p style='font-size: 30px;'>Найменше серед трьох чисел - c=", c);
+            
+			let max = a > b ? a : b; max = max > c ? max : c;
+			document.write("<p style='font-size: 30px;'>Значення найбільшого серед трьох чисел - ", max);
+            let ser = (a + b + c) / 3
+            document.write("<p style='font-size: 30px;'>Значення середнього числа - ", ser)
+		</script>
+	</body>
+</html>
