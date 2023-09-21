@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Мінчук ПП-25</title>
+    <style>
+        .day {
+            font-size: 40px; /* Розмір тексту за замовчуванням */
+            color: black; /* Колір тексту за замовчуванням */
+        }
+
+        .large {
+            font-size: 50px; /* Великий розмір тексту */
+        }
+        .small{
+            font-size: 30px;
+        }
+        
+        .red {
+            color: red; /* Червоний колір тексту */
+        }
+
+        .green {
+            color: green; /* Зелений колір тексту */
+        }
+        .yellow{
+            color: yellow;
+        }
+        .blue{
+            color: blue;
+        }
+        .brown{
+            color: brown;
+        }
+        .pink{
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        function weekDay(size = 'normal', day, color = 'black') {
+                const dayElement = document.createElement('div');
+                dayElement.textContent = day;
+                dayElement.className = 'day ' + size + ' ' + color;
+                document.body.appendChild(dayElement);
+            } 
+
+        weekDay('large', 'Понеділок', 'red');
+        weekDay('large', 'Вівторок', 'green');
+        weekDay('normal', 'Середа', 'yellow');
+        weekDay('normal', 'Четвер', 'black');
+        weekDay('normal', 'П\'ятниця', 'blue');
+        weekDay('small', 'Субота', 'brown');
+        weekDay('small', 'Неділя', 'pink');
+        
+    </script>
+</body>
+</html>

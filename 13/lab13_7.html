@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Мінчук ПП-25</title>
+	</head>	
+	<body>
+		<script>
+			let i = 5;
+			function f(a,b) { 
+				if (a > b) return "Hello";
+                else "Hola!";
+			}
+            function square(x1, y1, x2 ,y2){
+                let a = y2-y1;
+                let b = x2-x1;
+                return a*b;
+            }
+			document.write("<p style = 'font-size: 30px;'>Також ми можемо передавати значення функції як змінної"); 
+			document.write("<p style = 'font-size: 30px;'>Значенння змінної f:<BR>" + f.valueOf());
+			document.write("<p style = 'font-size: 30px;'>Значенння змінної square:<BR>" + square.valueOf());
+		</script>
+	</body>
+</html>

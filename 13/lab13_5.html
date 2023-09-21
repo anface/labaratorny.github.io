@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Мінчук ПП-25</title>
+	</head>	
+	<body>
+		<script>
+            "use strict";
+            function printText(txt, size = 14, color = "black") {
+                 document.write(`<div style="font-size:${size}pt; color:${color}">${txt}</div>`);
+            }
+            printText("<p>Текст з розміром тексту - 40", 40); 
+            printText("<p>Другий рядок з розміром тексту - 30 та кольором - синій", 30, "blue"); 
+            printText("<p>Рядок, у якому всі значення за замовчуванням"); 
+            printText("<p>Рядок, який використовує розмір тексту - 12 та сірий колір", 12, "grey");
+    </script>
+
+	</body>
+</html>

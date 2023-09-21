@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Мінчук Роман</title>
+	</head>	
+	<body>
+		<script>
+			function double(a) { 
+				return a + "-" + a;
+			}
+			function fullSentence(a, k) { 
+				return k(a) + ", " + "World!";
+			}
+			let result = fullSentence ("Hello", double); 
+			document.write("<h1> Крім чисел ми також можемо передавати у функції будь-який тип данних: ");
+			document.write("<h2> result =", result);
+		</script>
+	</body>
+</html>
