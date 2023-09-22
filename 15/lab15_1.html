@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Мінчук ПП-25</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let text = prompt("Введіть текст: ");
+        let a = prompt("Введіть A: ");
+        let b = prompt("Введіть B: ");
+        
+        let array = [];
+        for (let i = 0; i < text.length; i++) {
+            let symbol = text[i];
+            array.push(symbol);
+        }
+        
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === a && array[i+1] === b) {
+                array.splice(i + 1, 0, "*");
+            }
+        }
+        
+        array = array.join('');
+        document.write(array);
+        
+        let counter = 0;
+        for (let i = 0; i < array.length - 1; i++) {
+            if (array[i] === "I" && array[i+1] === "2") {
+                counter++;
+            }
+        }
+        
+        document.write("<br>");
+        document.write("Кількість 'I' перед '2': ", counter);
+    </script>
+</body>
+</html>

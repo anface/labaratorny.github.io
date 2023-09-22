@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Мінчук ПП-25</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let text = prompt("Введіть текст зі словами: ");
+
+        function shuffleLetters(inputString) {
+            let words = inputString.split(' ');
+            for (let i = 0; i < words.length; i++) {
+                let word = words[i].split('');
+                for (let j = 1; j < word.length - 1; j++) {
+                    const randomIndex = Math.floor(Math.random() * (word.length - 2)) + 1;
+                    [word[j], word[randomIndex]] = [word[randomIndex], word[j]];
+                }
+                words[i] = word.join('');
+            }
+            return words.join(' ');
+        }
+
+        document.write(shuffleLetters(text));
+
+    </script>
+</body>
+</html>

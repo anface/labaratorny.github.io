@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Мінчук ПП-25</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let text = prompt("Введіть текст зі словами: ");
+
+        function swapCode(inputString){
+            let nextCharCode = 0;
+            let result = "";
+            for (let i = 0; i < inputString.length; i++) {
+                let currentChar = inputString.charAt(i);
+                if (currentChar === "Я") {
+                    nextCharCode = 1040; // ASCII-код для "А"
+                } else if (currentChar === "я") {
+                    nextCharCode = 1072; // ASCII-код для "а"
+                } else {
+                    nextCharCode = currentChar.charCodeAt(0) + 2;
+                }
+                let nextChar = String.fromCharCode(nextCharCode);
+                result += nextChar;
+            }
+            return result;
+        }
+
+        document.write(swapCode(text));
+
+    </script>
+</body>
+</html>

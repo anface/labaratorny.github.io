@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Мінчук ПП-25</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let text = prompt("Введіть текст зі словами: ");
+
+        let array = text.split(' ');
+        let length = array.length;
+        
+        
+        if (length >= 5) {
+            for (let i = 0; i <= length; i++) {
+                if (i === 4) {
+                    let word = array[i];
+                    let counter = 0;
+                    for (let j = 0; j < word.length; j++) {
+                        if (word[j] === "I") {
+                            counter++;
+                        }
+                    }
+
+                    document.write("Кількість 'I' у п'ятому слові: ", counter);
+                }
+            }
+        }else {
+            document.write("<br>");
+            document.write("Ви вказали менше 5 слів");
+        }
+        document.write("<br>");
+        array = array.join('.');
+        document.write(array);
+    </script>
+
+</body>
+</html>
