@@ -7,19 +7,19 @@
 <body>
     <script>
         "use strict";
-        let text = prompt("Введіть текст зі словами: ");
+        let text = prompt("Введіть слово: ");
 
         function swapCode(inputString){
             let nextCharCode = 0;
             let result = "";
             for (let i = 0; i < inputString.length; i++) {
                 let currentChar = inputString.charAt(i);
-                if (currentChar === "Я") {
-                    nextCharCode = 1040; // ASCII-код для "А"
-                } else if (currentChar === "я") {
-                    nextCharCode = 1072; // ASCII-код для "а"
+                if(currentChar === "z"){
+                    nextCharCode = 97;
+                } else if (currentChar === "Z") {
+                    nextCharCode = 65;
                 } else {
-                    nextCharCode = currentChar.charCodeAt(0) + 2;
+                    nextCharCode = currentChar.charCodeAt(0) + 1;
                 }
                 let nextChar = String.fromCharCode(nextCharCode);
                 result += nextChar;
