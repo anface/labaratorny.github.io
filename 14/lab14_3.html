@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Мінчук ПП-25</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        let q = 0;
+        let array = [];
+        for (let i = 1; i <= 15; i++) {
+            q = getRandomNumber(-100, 100);
+            array.push(q);
+            document.write(q, "  ");
+        }
+        
+        function dobytok(arr) {
+            let dob = 1;
+            let a = parseInt(prompt("Введіть від якого елемента потрібно знаходити добуток"));
+            let b = parseInt(prompt("Введіть до якого елемента потрібно знаходити добуток"));
+
+            // Перевірка на коректність введених значень
+            if (isNaN(a) || isNaN(b) || a >= b || a < 0 || b > arr.length) {
+                return "Некоректний вхідний діапазон";
+            }
+
+            for (let i = a ; i <= (b - 1); i++) {
+                dob *= arr[i];
+            }
+            return dob;
+        }
+
+        document.write("<br>","Добуток чисел на проміжку: ", dobytok(array));
+
+        let counter = 0;
+        for (let i = 2; i <= array.length; i += 3) {
+            if (array[i] < 0) {
+                counter++;
+                document.write("<br>", counter, " ", array[i]);
+            }
+        }
+
+        
+        document.write("<br>","Кількість від'ємних чисел, позиції яких кратні 3: ", counter);
+    </script>
+</body>
+</html>

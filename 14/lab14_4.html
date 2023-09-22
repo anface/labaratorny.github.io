@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Мінчук ПП-25</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        let fruits=['apple','pineapple','mango','melon','grape'];
+        let citrus=['orange','lemon','lime'];
+        
+        document.write(fruits);
+        document.write("<br>", citrus);
+        
+        fruits = fruits.concat(citrus);
+        document.write("<br>", fruits);
+        
+        let indMango = fruits.indexOf("mango");
+        let newElements = ["pear", "cherry", "plum", "raspberry", "strawberry"];
+        fruits.splice(indMango + 1, 0, "pear", newElements);
+        document.write("<br>", fruits);
+
+        fruits.pop();
+        fruits.pop();
+        fruits.pop();
+        
+        document.write("<br>", fruits);
+        document.write("<br>", fruits.reverse());
+        
+        fruits.sort(
+            function(a, b) {
+                return a.length - b.length;
+                }
+        );
+        document.write("<br>", fruits);
+
+
+        
+    </script>
+</body>
+</html>

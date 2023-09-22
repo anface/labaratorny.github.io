@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Мінчук ПП-25</title>
+        
+</head>
+<body>
+    <script>
+        "use strict";
+
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+        
+        
+        let q = 0;
+        let array = [];
+        for(let i = 1; i <= 15; i++) {
+            let q = getRandomNumber(0, 100);
+            array.push(q);
+            document.write(q, "  ");
+        }
+        
+        let minElem = array[0];
+        
+        for(let i = 0; i <= array.length; i++)
+        {
+            if(array[i] < minElem)
+                {
+                    minElem = array[i];
+                }
+        }
+        
+        document.write("minElem = ", minElem);
+
+        
+        function elemSwap(arr, a , b)
+        {
+            let temp = arr[a];
+            arr[a] = arr[b];
+            arr[b] = temp;
+        }
+        let indexOfMin = array.indexOf(minElem);
+        elemSwap(array, indexOfMin, 13);
+        
+        document.write("<br>");
+        document.write(array);
+    </script>
+</body>
+</html>

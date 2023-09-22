@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Мінчук ПП-25</title>
+</head>
+<body>
+    <script>
+            "use strict";
+            let k = 0;
+            let treag = [];
+            for(let i = 1; i <= 10; i++) {
+                k = (i * (i + 1)) / 2;
+                treag.push(k);
+                document.write(k, "  ");
+            }
+            
+            document.write("<br>");
+        
+            let q = 0;
+            let kvadr = [];
+            for(let i = 1; i <= 10; i++) {
+                q = i * i;
+                treag.push(q);
+                document.write(q);
+            }
+        
+            document.write("<br>");
+
+            let rez = treag.concat(kvadr);
+            document.write(rez);
+        
+            document.write("<br>");
+
+            rez.reverse();
+            document.write(rez)
+    </script>
+
+</body>
+</html>
