@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Перформанс</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">      
+  <link rel="stylesheet" href="style.css"> <!-- Підключення файлу зі стилями -->
+</head>
+<body>
+  <div class="video-container">
+    <video autoplay muted loop id="video-background">
+      <source src="videos/main.mp4" type="video/mp4"> <!-- Відео за замовчуванням -->
+      Your browser does not support the video tag.
+    </video>
+    <div>
+        <p class="title" data-video="videos/main.mp4">ПЕРФОМАНС</p>
+    </div>
+    <div class="words">
+      <p class="word" data-video="videos/kanye.mp4" onclick="navigateToPage('artistPage/artist.html')">візуал</p>
+      <p class="word" data-video="videos/travis.mp4" onclick="navigateToPage('artistPage/artist.html')">аудіо</p>
+      <p class="word" data-video="videos/eminem.mp4" onclick="navigateToPage('artistPage/artist.html')">текст</p>
+    </div>
+    <div>
+        <p class="title2" data-video="videos/main.mp4" onclick="navigateToPage('aboutPage/about.html')">АВТОР</p>
+    </div>
+  </div>
+  <script src="script.js"></script> <!-- Підключення файлу зі скриптами -->
+</body>
+</html>
