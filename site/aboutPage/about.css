@@ -1,0 +1,175 @@
+body {
+      /* Встановлення зображення як фону */
+      background-image: url('../img/test2.jfif');
+      /* Вибір способу масштабування фону */
+      background-size: cover; /* Повне заповнення розміром */
+      background-repeat: no-repeat; /* Запобігає повторенню зображення */
+      background-attachment: fixed; /* Фіксує фон при прокручуванні */
+      background-color: black;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.perfomance{
+    color: aliceblue;
+    font-size:30px;
+    font-family: 'Exo 2', sans-serif;
+    text-align: left;
+    margin-left: 30px;
+    transition: color 0.5s ease;
+}
+.about{
+    color: aliceblue;
+    font-size:30px;
+    font-family: 'Exo 2', sans-serif;
+    text-align: right;
+    margin-right: 30px;
+    transition: color 0.5s ease;
+}
+.perfomance:hover{
+    text-decoration: line-through;
+    color: red;
+    cursor: pointer; /* Зміна вигляду курсору при наведенні */
+}
+.about:hover {
+    text-decoration: line-through;
+    color: red;
+    cursor: pointer; /* Зміна вигляду курсору при наведенні */
+}
+
+
+.main-header {
+  display: flex;
+  justify-content: space-between; /* Розмістити елементи по обидва боки */
+  align-items: center;    
+  background: black;
+  opacity: 85%;
+  height: 15%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: fixed; /* Фіксоване позиціонування */
+  width: 100%; /* Розтягуємо хедер на всю ширину екрану */
+  z-index: 1000; /* Задаємо високий індекс, щоб хедер накладався на інші елементи */
+}
+
+.content {
+  color: #ffffff;
+  text-align: center;
+  padding: 100px;
+  position: relative; /* Зміна позиції вмісту */
+  z-index: 1; /* Розміщення поверх затемнення */
+}
+
+.container {
+  position: relative;
+  bottom: -70px;
+  background-color: black;
+  border-radius: 15px;
+  padding: 20px;
+  width: 80%;
+  height: 50%;
+  max-height: 50%;
+  margin: 20px auto;
+  opacity: 80%;
+  transition: height 0.5s ease, max-height 0.5s ease;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 2.5); /* Додати тінь */  
+  transition: transform 0.3s ease-in-out;
+}
+.container img {
+  margin-bottom: 20px; /* Додати відступ знизу для фото */
+}
+
+.container:hover {
+  transform: scale(1.05); /* Збільшення при наведенні */
+  transition: transform 0.3s ease-in-out; /* Плавна анімація */
+}
+.container:not(:hover) {
+  transform: scale(1); /* Повернення до звичайного масштабу */
+}
+
+.content {
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.content a {
+  display: block; /* Робить посилання блоковим для переходу на новий рядок */
+  margin-top: 10px; /* Встановлює відступ від попереднього тексту */
+  color: #ffffff; /* Колір посилання */
+  text-decoration: none; /* Видаляє підкреслення */
+  font-size:30px;
+  font-family: 'Exo 2', sans-serif;
+  transition: color 0.3s ease;
+}
+.content a:hover {
+  text-decoration: line-through;
+  color: red;
+}
+.github-link-icon {
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  margin-right: 5px; /* Adjust the spacing between the icon and text */
+  margin-top: 12px;
+  vertical-align: middle; /* Align the icon vertically with the text */
+}
+
+/* Стилі для галереї */
+.gallery {
+  display: flex;
+  margin-top: 25px;
+}
+
+.thumbnails img {
+  width: 350px;
+  height: 350px;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+.image {
+  width: 25%;
+  height: 25%;
+  border-radius: 15px;
+  float: left;
+  margin-right: 15px;
+  
+}
+
+.titleAuthor {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.textAuthor {
+  font-size: 30px;
+  font-family: 'Exo 2', sans-serif;
+  text-align: center;
+}
+body {
+  opacity: 0; /* Початкове значення прозорості */
+  transition: opacity 0.5s ease-in-out; /* Анімація з'явлення */
+}
+
+body.fade-in {
+  opacity: 1; /* Значення прозорості при з'явленні */
+}
+
+.map-container{
+    border-radius: 30px;
+}
+.rounded-map {
+    margin-top: 30px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.pic{
+  max-width: 800px; /* Максимальна ширина зображення */
+  max-height: 400px; /* Максимальна висота зображення */
+  /* Інші стилі (за потреби) */
+}
+
+
